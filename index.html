@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">影格流光 - FrameFlow</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- 语言切换按钮 -->
+    <div class="language-switch">
+        <button id="lang-zh" class="lang-btn active" data-lang="zh">中文</button>
+        <button id="lang-en" class="lang-btn" data-lang="en">English</button>
+    </div>
+
+    <!-- 主标题 -->
+    <header class="header">
+        <h1 data-i18n="main-title">影格流光</h1>
+        <p data-i18n="subtitle">电影胶片般的视觉体验</p>
+    </header>
+
+    <!-- 双行胶片滑动容器 -->
+    <div class="film-container-wrapper">
+        <!-- 第一行胶片：向左滑动 -->
+        <div class="film-container">
+            <div class="film-strip" id="filmStripRow1">
+                <!-- 第一行胶片帧将通过JS动态生成 -->
+            </div>
+        </div>
+        
+        <!-- 第二行胶片：向右滑动 -->
+        <div class="film-container">
+            <div class="film-strip" id="filmStripRow2">
+                <!-- 第二行胶片帧将通过JS动态生成 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 加载提示 -->
+    <div class="loading" id="loading">
+        <p data-i18n="loading">正在加载胶片...</p>
+    </div>
+
+    <!-- 引入脚本 -->
+    <script src="js/i18n.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html> 
